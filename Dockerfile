@@ -12,7 +12,7 @@
 
 # Modified
 
-FROM amazonlinux:latest
+FROM amazonlinux:2018.03
 
 RUN curl --silent --location https://rpm.nodesource.com/setup_8.x | bash - \
     && yum install python36 python36-devel python36-pip python36-setuptools python36-virtualenv nodejs bzip2 fontconfig openssh-clients git -y \
