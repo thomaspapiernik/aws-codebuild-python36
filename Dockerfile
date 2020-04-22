@@ -15,7 +15,7 @@
 FROM amazonlinux:2018.03
 
 RUN curl --silent --location https://rpm.nodesource.com/setup_8.x | bash - \
-    && yum install python36 python36-devel python36-pip python36-setuptools python36-virtualenv nodejs zip bzip2 which fontconfig openssh-clients git -y \
+    && yum install java-1.8.0-openjdk python36 python36-devel python36-pip python36-setuptools python36-virtualenv nodejs zip bzip2 which fontconfig openssh-clients git -y \
     && yum clean all \
     && rm -rf /var/cache/yum \
     && pip-3.6 install awscli --no-cache-dir \
